@@ -1,10 +1,10 @@
-const botao = document.querySelector('btn-mostrar-projetos');
+const botaoMostrar = document.querySelector('.btn-mostrar-projetos');
 const projetosInativos = document.querySelectorAll('.projeto:not(.ativo)');
 
-botao.addEventListener('click', () => {
+botaoMostrar.addEventListener('click', () => {
     projetosInativos.forEach(projetoInativo => {
         projetoInativo.classList.add('ativo');
     });
 
-    botao.classList.add('remover');
+    botaoMostrar.classList.add('remover');
 });
